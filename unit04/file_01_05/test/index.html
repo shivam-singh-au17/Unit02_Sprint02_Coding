@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myh1 {
+            text-align: center;
+        }
+        #main{
+            max-width: 50%;
+            margin: auto;
+            background-color: turquoise;
+            box-shadow: 2px 2px 10px black;
+            padding: 20px;
+        }
+    </style>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+    <div id="container"></div>
+</body>
+
+</html>
+
+<script>
+    ReactDOM.render(
+        React.createElement("div", { id: "main" },
+            React.createElement("h1", { id: "myh1" }, "Shivam Singh"),
+            React.createElement("h2", { id: "myh1" }, "From Mirzapur"),
+            React.createElement("img", { src: "https://create-react-app.dev/img/oss_logo.png" })
+        ),
+        document.getElementById("container")
+    )
+</script>
